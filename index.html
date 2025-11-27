@@ -3,24 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>My Simple Webpage</title>
+    <link rel="icon"
+        type="image/png"
+        sizes="32x32" href="./images/cs210.jpg">
 </head>
 <body>
-    <h1>Computer Science Student at North Idaho College</h1>
-    <h1>Matteo Coppola</h1>
-    <h1>mcoppola@NIC.EDU</h1>
-    <h3>About Me!</h3>
-    <p>I am a student at North Idaho College and I am currently studying Computer Science. I have worked on
-        quite a few projects at my time here. The most notable one was recreating the popular game
-        Five Nights at Freddy's. I have also created a program parser as well as created a TicTacToe game
-        that is played over a server. I hope to go into software engineering at some point.
-    </p>
-    <h2>Five Nights at Freddys</h2>
-    <a href="https://github.com/MattPola/FNAF-Final-Spr-2025">>>Link to repository <<</a>
-    <h2>Program Lexer</h2>
-    <a href="https://github.com/MattPola/lexer-midterm-project-MattPola">>>Link to repository <<</a>
-    <h2>TicTacToe</h2>
-    <a href="https://github.com/MattPola/pa8-MattPola">>>Link to repository <<</a>
+    <div class="heading">
+        <h1 class="intro">Computer Science Student at North Idaho College</h1>
+        <img src="images/nic.jpg"
+            alt="NIC" width="300">
+        <div class="contact">
+            <h1>Matteo Coppola</h1>
+            <h1>mcoppola@NIC.EDU</h1>
+        </div>
+
+    </div>
+
+    <div class="sub-heading">
+        <h2 class="about-me">About Me!</h2>
+        <div class="sub-row">
+            <p>I am a student at North Idaho College and I am currently studying Computer Science. I have worked on
+                quite a few projects during my time here. The most notable one was recreating the popular game
+                Five Nights at Freddy's. I have also created a program parser as well as created a TicTacToe game
+                that is played over a local server. I hope to go into software engineering at some point.
+            </p>
+            <img src="images/portfolio.jpg"
+                alt="portrait" width="500">
+        </div>
+        
+    </div>
+    
+    <div class="projects">
+        <div class="project-card">
+            <h2>Five Nights at Freddys</h2>
+            <img src="images/fnaf.jpg"
+                alt="fnaf" width="251">
+            <a href="https://github.com/MattPola/FNAF-Final-Spr-2025">>>Link to repository <<</a>
+        </div>
+        
+        <div class="project-card">
+            <h2>Program Lexer</h2>
+            <img src="images/lexer.jpg"
+                alt="lexer" width="251">
+            <a href="https://github.com/MattPola/lexer">>>Link to repository <<</a>
+        </div>
+        
+        <div class="project-card">
+            <h2>TicTacToe w/ server</h2>
+            <img src="images/tictactoe.jpg"
+                alt="tictactoe" width="251">
+            <a href="https://github.com/MattPola/PA8">>>Link to repository <<</a>
+        </div>
+        
+    </div>
+        
+    
 
 
 </body>
