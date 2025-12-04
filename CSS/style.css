@@ -36,8 +36,6 @@ body{
     font-size: 25px;
 }
 
-
-
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,6 +48,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
     text-align: center;
 }
 
@@ -59,6 +58,14 @@ body{
     border-radius: 8px;
 }
 
+.project-card h2 {
+    max-width: 300px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h2{
     font-size: 50px;
     margin: 0px;
@@ -66,4 +73,71 @@ h2{
 
 .intro{
     max-width: 375px;
+}
+
+.screenshots {
+    background-color: #14B8A6;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.screenshots img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.screenshot h2 {
+    margin-top: 0.5rem;
+    font-size: 2.4rem;
+    color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+
+    .heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .sub-heading {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .sub-heading img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .sub-row {
+        flex-direction: column;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .project-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .screenshot {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
